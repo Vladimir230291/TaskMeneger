@@ -3,7 +3,7 @@ import Priority.Priority;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Objects;
+
 
 public abstract class Task {
     private final int id;
@@ -21,7 +21,16 @@ public abstract class Task {
         this.task = task;
         this.deadline = deadline;
         this.author = author;
-        this.date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd  HH:mm:ss"));
+        this.date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        this.priority = priority;
+    }
+
+    public Task(int id, String date, String deadline, String author, String task, Priority priority) {
+        this.id = id;
+        this.date = date;
+        this.deadline = deadline;
+        this.author = author;
+        this.task = task;
         this.priority = priority;
     }
 
@@ -47,8 +56,6 @@ public abstract class Task {
     public String getTask() {
         return task;
     }
-
-
     @Override
     public int hashCode() {
         int result = date != null ? date.hashCode() : 0;
@@ -66,6 +73,9 @@ public abstract class Task {
     public String toString() {
         return String.format("id: %d, Дата добавления записи: %s,\nДедлайн: %s, Автор: %s,\nЗадача: %s\n",
                 id, date, deadline, author, task);
+    }
+    public String toSave() {
+        return String.format("%d,%s,%s,%s,%s,%s", id, date, deadline, author, task, priority);
     }
 
 }

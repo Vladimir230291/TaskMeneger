@@ -7,4 +7,7 @@ public class LowPriorityTaks extends Task {
         super(task, deadline, name, p);
 
     }
+    public LowPriorityTaks(int id, String date, String deadline, String author, String task, Priority priority) {
+        super(id, date, deadline, author, task, priority);
+    }
 }

@@ -7,7 +7,14 @@
     <list default="true" id="27c778ca-80ec-47dc-91e0-1da066af0f1a" name="Changes" comment="12.03">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Priority/ListTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Priority/ListTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaveAndLoad/Load.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaveAndLoad/Load.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SaveAndLoad/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaveAndLoad/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaveAndLoad/save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/SaveAndLoad/save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks/HightPriorityTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks/HightPriorityTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks/LowPriorityTaks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks/LowPriorityTaks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks/MiddlePriorityTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks/MiddlePriorityTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tasks/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tasks/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,5 +154,21 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="12.03" />
     <option name="LAST_COMMIT_MESSAGE" value="12.03" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SaveAndLoad/Load.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

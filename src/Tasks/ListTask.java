@@ -1,10 +1,11 @@
-package Priority;
+package Tasks;
+import Priority.Priority;
 import Tasks.Task;
 import java.util.*;
 
-public class ListTask<T> extends ArrayList<T> {
+public class ListTask<T extends Task> {
 
-    List<Task> tasks;
+    private List<Task> tasks;
 
     public ListTask() {
         tasks = new ArrayList<>();
@@ -13,29 +14,28 @@ public class ListTask<T> extends ArrayList<T> {
         tasks.add(task);
     }
 
-
-    public void PrintAllTask() {
+    public void printAllTask() {
         System.out.println("in print" + tasks.size());
         for (Task task: tasks) {
             System.out.println(task);
         }
 
     }
-    public void PrintLowPriorityTask() {
+    public void printLowPriorityTask() {
         for (Task task: tasks) {
             if (task.getPriority() == Priority.LOW) {
                 System.out.println(task);
             }
         }
     }
-    public void PrintMiddlePriorityTask() {
+    public void printMiddlePriorityTask() {
         for (Task task: tasks) {
             if (task.getPriority() == Priority.MIDDLE) {
                 System.out.println(task);
             }
         }
     }
-    public void PrintHightPriorityTask() {
+    public void printHightPriorityTask() {
         for (Task task: tasks) {
             if (task.getPriority() == Priority.HIGH) {
                 System.out.println(task);
@@ -43,15 +43,10 @@ public class ListTask<T> extends ArrayList<T> {
         }
     }
 
-
-    public Task getTask(int id) {
-        for (Task task: tasks) {
-            if (task.getId() == id) {
-                return task;
-            }
-        }
-        return null;
+    public List<Task> getTasks() {
+        return tasks;
     }
+
 
 
 }
