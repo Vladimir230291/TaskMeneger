@@ -2,27 +2,20 @@ package Priority;
 import Tasks.Task;
 import java.util.*;
 
-public class ListTask<T extends Task> {
+public class ListTask<T> extends ArrayList<T> {
 
     List<Task> tasks;
-    int size;
+
     public ListTask() {
         tasks = new ArrayList<>();
     }
     public void addTask(Task task) {
         tasks.add(task);
     }
-    public void removeTask(int id) {
-        size = tasks.size();
-        for (Task task: tasks){
-            if (task.getId() == id) {
-                tasks.remove(task);
-                break;
-            }
 
-        }
-    }
+
     public void PrintAllTask() {
+        System.out.println("in print" + tasks.size());
         for (Task task: tasks) {
             System.out.println(task);
         }
@@ -48,8 +41,20 @@ public class ListTask<T extends Task> {
                 System.out.println(task);
             }
         }
+    }
+
+
+    public Task getTask(int id) {
+        for (Task task: tasks) {
+            if (task.getId() == id) {
+                return task;
+            }
         }
+        return null;
+    }
+
 
 }
+
 
 

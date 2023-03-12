@@ -48,6 +48,7 @@ public abstract class Task {
         return task;
     }
 
+
     @Override
     public int hashCode() {
         int result = date != null ? date.hashCode() : 0;

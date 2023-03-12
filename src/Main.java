@@ -3,6 +3,8 @@ import SaveAndLoad.Save;
 import Tasks.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -17,7 +19,14 @@ public class Main {
        taskList.addTask(task);
        taskList.addTask(task1);
        taskList.addTask(task2);
+        System.out.println("after add" + taskList.size());
+       taskList.PrintAllTask();
        Save save = new Save();
+
+       save.saveTask(taskList);
+
+
+
 
 
 
