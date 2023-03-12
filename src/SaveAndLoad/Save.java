@@ -9,8 +9,12 @@ import java.io.IOException;
 
 
 public class Save{
+    ListTask <Task> taskList;
+    public Save(ListTask<Task> listTask) {
+        this.taskList = listTask;
+    }
 
-    public void saveTask(ListTask<Task> taskList) throws IOException {
+    public void saveTask() throws IOException {
         System.out.println("saveTask" + taskList.size());
         try (FileWriter fr = new FileWriter("src/SaveAndLoad/save.txt")) {
             for (Task task : taskList) {
@@ -20,6 +24,7 @@ public class Save{
             e.printStackTrace();
         }
     }
+
 }
 
 

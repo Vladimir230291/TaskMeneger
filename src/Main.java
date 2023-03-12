@@ -19,11 +19,11 @@ public class Main {
        taskList.addTask(task);
        taskList.addTask(task1);
        taskList.addTask(task2);
-        System.out.println("after add" + taskList.size());
-       taskList.PrintAllTask();
-       Save save = new Save();
+       System.out.println("after add" + taskList.size());
 
-       save.saveTask(taskList);
+       Save save = new Save(taskList);
+
+       save.saveTask();
 
 
 
